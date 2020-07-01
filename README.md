@@ -2,7 +2,7 @@
 
 Uninstalling wine is a real pain. If you try to directly uninstall wine using the apt-get remove, it still leaves the windows programs on your computer and it leaves them in your launch pad which wastes memory and visual space. 
 
-This program will take care of all that pain for you. 
+This program will take care of the whole uninstallation process for you. 
 
 **Steps:**
 
