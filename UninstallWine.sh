@@ -13,7 +13,7 @@ if [ "$decision" = "y" ]; then
     echo "Beginning Uninstallation"
     
 else
-	echo installation stopped
+	echo uninstallation stopped
 	
 	exit 0
 fi
