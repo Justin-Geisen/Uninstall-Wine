@@ -26,8 +26,8 @@ sudo apt-get autoremove --purge wine32
 sudo apt-get autoremove --purge wine
 
 
-#find wine directory (it's in the home folder hidden) 
-winePath=$(find / -xdev 2>/dev/null -name ".wine")
+#path to wine directory (it's in the home folder hidden) 
+winePath="/home/"$(whoami)"/.wine"
 
 echo .wine directory: $winePath
 
@@ -39,11 +39,7 @@ if rm -r $winePath ; then
 	
 else 
 
-	echo could not delete wine directory
-	echo You may have already manually found the .wine file and deleted it. If not then check to see if you have duplicate .wine folders by running this command: 
-	echo "find / -xdev 2>/dev/null -name '.wine'"
-	echo if you have multiple, then delete them manually 
-	
+	echo could not delete wine directory	
 fi
 
 
