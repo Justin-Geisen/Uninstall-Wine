@@ -39,7 +39,8 @@ if rm -r $winePath ; then
 	
 else 
 
-	echo could not delete wine directory	
+	echo could not delete wine directory
+	echo may have already been deleted or never created
 fi
 
 
